@@ -2,7 +2,8 @@
 import streamlit as st
 
 # Import the mini Apps
-import eda_app 
+import eda_app
+import ml_app
 
 def main():
     st.title("Main App")
@@ -15,7 +16,7 @@ def main():
     elif choice == "EDA":
         eda_app.run_eda_app()
     elif choice == "ML":
-        pass
+        ml_app.run_ml_app()
     else:
         st.subheader("About")
 
